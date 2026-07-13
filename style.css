@@ -189,7 +189,7 @@
   .orbit-core-icon { display:flex; align-items:center; justify-content:center; position:relative; z-index:2; }
   .orbit-core-text { display:none; }
 
-  /* === ORBIT RINGS — ring width 200/320/440, dots centred ON line === */
+  /* === ORBIT RINGS ring width 200/320/440, dots centred ON line === */
   .orbit-ring {
     position:absolute; top:50%; left:50%;
     transform:translate(-50%,-50%);
@@ -227,13 +227,13 @@
   .dot-inner span { font-size:1.1rem; display:block; line-height:1; }
   .dot-inner label { font-size:0.44rem; font-weight:700; letter-spacing:0.4px; white-space:nowrap; display:block; cursor:pointer; margin-top:1px; }
 
-  /* Ring 1 — radius=100px (half of 200) → translateX(100px), dot 48px → margin-left:-24px */
+  /* Ring 1 radius=100px (half of 200) → translateX(100px), dot 48px → margin-left:-24px */
   .r1 .dot-wrap:nth-child(1) { transform:rotate(0deg) translateX(100px); }
   .r1 .dot-wrap:nth-child(1) .dot-inner { animation:counterRotate1 10s linear infinite; background:linear-gradient(135deg,#1a6fc4,#00b8d9); }
   .r1 .dot-wrap:nth-child(2) { transform:rotate(180deg) translateX(100px); }
   .r1 .dot-wrap:nth-child(2) .dot-inner { animation:counterRotate1 10s linear infinite; background:linear-gradient(135deg,#38c9a8,#00b8d9); }
 
-  /* Ring 2 — radius=160px (half of 320) → translateX(160px) */
+  /* Ring 2 radius=160px (half of 320) → translateX(160px) */
   .r2 .dot-wrap:nth-child(1) { transform:rotate(0deg) translateX(160px); }
   .r2 .dot-wrap:nth-child(1) .dot-inner { animation:counterRotate2 18s linear infinite; background:linear-gradient(135deg,#a78bfa,#60a5fa); }
   .r2 .dot-wrap:nth-child(2) { transform:rotate(120deg) translateX(160px); }
@@ -241,7 +241,7 @@
   .r2 .dot-wrap:nth-child(3) { transform:rotate(240deg) translateX(160px); }
   .r2 .dot-wrap:nth-child(3) .dot-inner { animation:counterRotate2 18s linear infinite; background:linear-gradient(135deg,#38c9a8,#1a6fc4); }
 
-  /* Ring 3 — radius=220px (half of 440) → translateX(220px), dots 40px → margin-left:-20px */
+  /* Ring 3 radius=220px (half of 440) → translateX(220px), dots 40px → margin-left:-20px */
   .r3 .dot-wrap:nth-child(1) { transform:rotate(0deg) translateX(220px); }
   .r3 .dot-wrap:nth-child(1) .dot-inner { animation:counterRotate3 28s linear infinite; background:linear-gradient(135deg,#ff6b6b,#ffc947); width:40px;height:40px;margin-top:-20px;margin-left:-20px;border-radius:50%; }
   .r3 .dot-wrap:nth-child(2) { transform:rotate(90deg) translateX(220px); }
@@ -521,7 +521,7 @@
 
   /* ── ANIMATIONS ── */
   @keyframes rotateOrbit { from { transform:translate(-50%,-50%) rotate(0deg); } to { transform:translate(-50%,-50%) rotate(360deg); } }
-  /* counter-rotate so dots always face up — match ring speeds */
+  /* counter-rotate so dots always face up match ring speeds */
   @keyframes counterRotate1 { from { transform:rotate(0deg); } to { transform:rotate(-360deg); } }
   @keyframes counterRotate2 { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
   @keyframes counterRotate3 { from { transform:rotate(0deg); } to { transform:rotate(-360deg); } }
@@ -534,7 +534,7 @@
   .animate-up-3 { animation:fadeSlideUp 0.7s ease 0.3s both; }
 
   /* ══════════════════════════════════════════
-     RESPONSIVE — MOBILE FIRST
+     RESPONSIVE MOBILE FIRST
   ══════════════════════════════════════════ */
 
   /* Hamburger menu button */
@@ -612,7 +612,7 @@
     .hero-btns { justify-content:center; flex-wrap:wrap; gap:10px; }
     .hero-btns a { width:100%; max-width:260px; text-align:center; }
 
-    /* Orbit — 58% scale: 480→280, rings 200→116, 320→186, 440→256 */
+    /* Orbit 58% scale: 480→280, rings 200→116, 320→186, 440→256 */
     .orbit-system { width:280px; height:280px; }
     .orbit-core { width:80px; height:80px; }
     .orbit-ring-1 { width:116px; height:116px; }
@@ -700,13 +700,13 @@
     .hero h1 { font-size:1.7rem; }
     .stats-bar { grid-template-columns:1fr 1fr; padding:18px; }
     .stat-num { font-size:1.7rem; }
-    /* ≤480 — 48% scale: rings 96/154/211 */
+    /* ≤480 48% scale: rings 96/154/211 */
     .orbit-system { width:230px; height:230px; }
     .orbit-core { width:62px; height:62px; }
     .orbit-ring-1 { width:96px; height:96px; }
     .orbit-ring-2 { width:154px; height:154px; }
     .orbit-ring-3 { width:211px; height:211px; }
-    /* radii: 48, 77, 105 — dots 28px → margin -14px */
+    /* radii: 48, 77, 105 dots 28px → margin -14px */
     .dot-inner { width:28px; height:28px; margin-top:-14px; margin-left:-14px; }
     .dot-inner span { font-size:0.7rem; }
     .r1 .dot-wrap:nth-child(1) { transform:rotate(0deg) translateX(48px); }
@@ -858,7 +858,7 @@
     font-family: 'Inter', sans-serif;
   }
 
-  /* ═══ CUSTOM CURSOR — small rich gradient glow ═══ */
+  /* ═══ CUSTOM CURSOR small rich gradient glow ═══ */
   #cursorGlow {
     position: fixed;
     top: 0; left: 0;
@@ -919,7 +919,7 @@
   #cookieBanner .cookie-reject:hover { background: var(--blue-soft); }
   @media (max-width: 560px) { #cookieBanner .cookie-actions { width: 100%; } #cookieBanner button { flex: 1; } }
 
-  /* ════ PRODUCTS PAGE — PRODUCT SHOWCASE ════ */
+  /* ════ PRODUCTS PAGE PRODUCT SHOWCASE ════ */
   .prod-stack { display:flex; flex-direction:column; gap:28px; max-width:1080px; margin:0 auto; }
   .prod-row {
     display:grid; grid-template-columns:0.92fr 1.08fr;
@@ -1035,7 +1035,7 @@
 
 
 /* ═══════════════════════════════════════════
-   SCROLL REVEAL — directional (corner) entrances
+   SCROLL REVEAL directional (corner) entrances
    ═══════════════════════════════════════════ */
 .reveal {
   opacity: 0;
@@ -1078,7 +1078,7 @@
   .reveal, .section-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
 
-/* ═══ REVEAL — extra motion styles (per-section variety) ═══ */
+/* ═══ REVEAL extra motion styles (per-section variety) ═══ */
 .reveal.pop       { transform: translateY(16px) scale(0.80); }
 .reveal.rise      { transform: translateY(34px) scale(0.965); }
 .reveal.zoom      { transform: scale(0.94); }
@@ -1094,7 +1094,7 @@
 
 
 /* ═══════════════════════════════════════════
-   ORBIT — twinkling star field + upright dots
+   ORBIT twinkling star field + upright dots
    ═══════════════════════════════════════════ */
 .orbit-stars {
   position: absolute; inset: -10%;
@@ -1151,13 +1151,13 @@
   to   { transform: translate(-50%,-50%) rotate(-360deg); }
 }
 
-/* Ring 1 — 10s forward */
+/* Ring 1 10s forward */
 @keyframes cr1a { from { transform: rotate(0deg);    } to { transform: rotate(-360deg); } }
 @keyframes cr1b { from { transform: rotate(-180deg); } to { transform: rotate(-540deg); } }
 .r1 .dot-wrap:nth-child(1) .dot-inner { animation: cr1a 10s linear infinite; }
 .r1 .dot-wrap:nth-child(2) .dot-inner { animation: cr1b 10s linear infinite; }
 
-/* Ring 2 — 18s reverse */
+/* Ring 2 18s reverse */
 @keyframes cr2a { from { transform: rotate(0deg);    } to { transform: rotate(360deg); } }
 @keyframes cr2b { from { transform: rotate(-120deg); } to { transform: rotate(240deg); } }
 @keyframes cr2c { from { transform: rotate(-240deg); } to { transform: rotate(120deg); } }
@@ -1165,7 +1165,7 @@
 .r2 .dot-wrap:nth-child(2) .dot-inner { animation: cr2b 18s linear infinite; }
 .r2 .dot-wrap:nth-child(3) .dot-inner { animation: cr2c 18s linear infinite; }
 
-/* Ring 3 — 28s forward */
+/* Ring 3 28s forward */
 @keyframes cr3a { from { transform: rotate(0deg);    } to { transform: rotate(-360deg); } }
 @keyframes cr3b { from { transform: rotate(-90deg);  } to { transform: rotate(-450deg); } }
 @keyframes cr3c { from { transform: rotate(-180deg); } to { transform: rotate(-540deg); } }
@@ -1196,7 +1196,7 @@
 .reveal, .section-reveal { will-change: opacity, transform; }
 
 /* ═══════════════════════════════════════════
-   PRODUCTS PAGE — refreshed layout
+   PRODUCTS PAGE refreshed layout
    ═══════════════════════════════════════════ */
 .px-hero {
   text-align: center;
@@ -1475,7 +1475,7 @@
 
 
 /* ═══════════════════════════════════════════════════════════
-   RESPONSIVE HARDENING — every screen, every page
+   RESPONSIVE HARDENING every screen, every page
    ═══════════════════════════════════════════════════════════ */
 
 /* 1. Never allow a sideways scrollbar (reveal transforms + orbit can cause it) */
@@ -1614,7 +1614,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════
-   NAV — animated chevron on dropdown items
+   NAV animated chevron on dropdown items
    ═══════════════════════════════════════════ */
 @media (min-width: 769px) {
   /* replace the plain text "▾" with the real SVG chevron */
@@ -1707,7 +1707,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   UNIFIED PAGE HEAD — same centred style as the Products page
+   UNIFIED PAGE HEAD same centred style as the Products page
    ═══════════════════════════════════════════════════════════ */
 .page-head {
   text-align: center;
@@ -1768,7 +1768,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   ABOUT — Vision / Mission premium cards
+   ABOUT Vision / Mission premium cards
    ═══════════════════════════════════════════════════════════ */
 .vm-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
@@ -1843,7 +1843,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CENTRED HEADINGS — fix: .section-tag is `width:fit-content`,
+   CENTRED HEADINGS fix: .section-tag is `width:fit-content`,
    so it needs auto margins inside class-centred containers too
    (the old rule only matched inline style="text-align:center")
    ═══════════════════════════════════════════════════════════ */
@@ -1897,7 +1897,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   PAGE HEADS — match the Contact page: plain background,
+   PAGE HEADS match the Contact page: plain background,
    .section-title sizing (no oversized hero type, no glow)
    ═══════════════════════════════════════════════════════════ */
 .page-head::before { display: none !important; }   /* drop the coloured glow */
@@ -2105,7 +2105,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   HEADING HIGHLIGHT — soft tinted box behind the page title
+   HEADING HIGHLIGHT soft tinted box behind the page title
    (Contact, About, Services, Products + product pages)
    ═══════════════════════════════════════════════════════════ */
 .page-head h1,
@@ -2136,7 +2136,7 @@ button, .btn-primary, .btn-secondary, .px-link, a.nav-cta { min-height: 44px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CONTACT — offices / response info band
+   CONTACT offices / response info band
    ═══════════════════════════════════════════════════════════ */
 .ct-info {
   position: relative; overflow: hidden;

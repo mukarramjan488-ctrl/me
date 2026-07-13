@@ -1,4 +1,4 @@
-# SoftNex — Multi-Page Site
+# SoftNex Multi-Page Site
 
 Real, separate, crawlable pages, tuned for SEO and now with a mobile-friendly menu.
 
@@ -7,7 +7,7 @@ HTML pages: index.html (Home), services.html, oracle-apex.html, oracle-erp.html,
 business-intelligence.html, support.html, big-data.html, customization.html,
 products.html, hims.html, erp-mug.html, edu-soft.html, about.html, contact.html,
 projects.html
-Shared assets: style.css (REQUIRED — pages are unstyled without it), sitemap.xml, robots.txt
+Shared assets: style.css (REQUIRED pages are unstyled without it), sitemap.xml, robots.txt
 Images (use EXACTLY these names): "Company Logo.png" (nav logo), "Tab logo.png" (tab/favicon),
 og-image.png (social preview)
 
@@ -36,4 +36,4 @@ index.html must be the default document for "/".
 
 ## Filename tip
 Filenames with spaces work in browsers. If your host ever fails to load them, rename to
-company-logo.png / tab-logo.png and tell me — I'll update every page.
+company-logo.png / tab-logo.png and tell me I'll update every page.
